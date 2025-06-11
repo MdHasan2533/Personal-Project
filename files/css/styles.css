@@ -37,7 +37,8 @@
 }
 */
 
-/*------------------------------------------------------------------------ Variable Css */
+/*------------------------------------------------------------------------ Variable Css -------------------------------------------------------------------------*/
+
 :root {
 
     --first-hue: 260;
@@ -73,7 +74,8 @@
 }
 
 
-/*------------------------------------------------------------------------ Base */
+/*------------------------------------------------------------------------ Base ---------------------------------------------------------------------------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -126,7 +128,8 @@ img {
     max-width: 100%;
 }
 
-/*------------------------------------------------------------------------ Reusable Css Classes  */
+/*------------------------------------------------------------------------ Reusable Css Classes  ----------------------------------------------------------------*/
+
 .section {
     /* padding-block: 1rem 4rem; */
     padding-block: 85px 35px;
@@ -173,7 +176,8 @@ img {
     border-style: solid;
     }
 
-/*------------------------------------------------------------------------ Layout  */
+/*------------------------------------------------------------------------ Layout  ------------------------------------------------------------------------------*/
+
 .container{
     max-width: 1320px;
     margin-inline: auto;
@@ -184,7 +188,8 @@ img {
     display: grid;
 }
 
-/*------------------------------------------------------------------------ Header and Nav */
+/*------------------------------------------------------------------------ Header and Nav ------------------------------------------------------------------------*/
+
 .header{
     background-color: transparent;
     position: fixed;
@@ -253,7 +258,8 @@ img {
     display: none;
 }
 
-/*------------------------------------------------------------------------ Home */
+/*------------------------------------------------------------------------ Home --------------------------------------------------------------------------------- */
+
 .home-container {
     grid-template-columns: 1fr repeat(2, max-content);
     align-items: center;
@@ -300,4 +306,106 @@ img {
 
 .home-social-link:hover {
     color: #8F87F1;
+}
+
+
+/*------------------------------------------------------------------------ About ------------------------------------------------------------------------------ */
+
+.about-container {
+    grid-template-columns: 3fr 6fr 2fr;
+    align-items:  center;
+    column-gap: 4rem;
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+
+.about-experience {
+    height: 500px;
+    width: 250px;
+    background: linear-gradient(309deg,rgba(136, 166, 229, 1) 61%, rgba(141, 110, 200, 1) 100%);
+    border-radius: 15px;
+    display: grid;
+    place-content: center;
+}
+
+.about-no-top,
+.about-rankholding {
+    color: #576191;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Alumni Sans SC", sans-serif;
+    text-align: center;
+}
+
+.about-at {
+    font-size: 20px;
+    font-weight: 200;
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+    text-align: center;
+    color: #2D336B;
+}
+
+.about-onepercent,
+.about-leetcode {
+    color: #FFF2F2;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: "Space Grotesk", sans-serif;
+    text-align: center;
+}
+
+.about-leet,
+.about-code {
+    color: #393E46;
+    font-family: "Alumni Sans SC", sans-serif;
+}
+
+.about-leet:hover,
+.about-code:hover {
+    color: #FFB823;
+}
+
+.about-and {
+    color: #2D336B;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about-Un {
+    color: #27548A;
+    font-family: "Alumni Sans SC", sans-serif;
+}
+.about-Un:hover {
+    color: #FFF2F2;
+}
+
+.about-stop{
+    color: #FFF2F2;
+    font-family: "Alumni Sans SC", sans-serif;
+}
+
+.about-stop:hover {
+    color: #27548A;
+}
+
+.about-description {
+    font-size: var(--h2-font-size);
+    margin-bottom: 2rem;;
+}
+
+.text-gradient {
+    -webkit-text-fill-color: hsla(var(--second-hue), 8%, 85%, 0.2);
+    background: linear-gradient(309deg,rgba(136, 166, 229, 1) 61%, rgba(141, 110, 200, 1) 100%);
+    background-clip: text;
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+}
+
+.about-data {
+    row-gap: 2rem;
+}
+
+.about-item-no{
+    font-size: var(--h2-font-size);
+    margin-bottom: 0.125rem;
 }
