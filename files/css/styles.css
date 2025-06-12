@@ -165,16 +165,22 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    }
+}
     
-    .button:hover{
+.button:hover{
     color: rgb(14, 14, 14);
     width: 205px;
     background: rgb(228, 252, 249) none repeat scroll 0% 0% / auto padding-box border-box;
     border-color: rgb(204, 0, 105);
     border-width: 0px;
     border-style: solid;
-    }
+}
+
+.section-title {
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 4.25rem;
+}
 
 /*------------------------------------------------------------------------ Layout  ------------------------------------------------------------------------------*/
 
@@ -408,4 +414,40 @@ img {
 .about-item-no{
     font-size: var(--h2-font-size);
     margin-bottom: 0.125rem;
+}
+
+/*------------------------------------------------------------------------ Services ------------------------------------------------------------------------------ */
+
+.services-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.services-card {
+    background: var(--container-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: color 0.3s;
+}
+
+.services-card:hover {
+    background: linear-gradient(209deg,rgba(136, 166, 229, 1) 81%, rgba(141, 110, 200, 1) 100%);
+}
+
+.services-no {
+    color: #295F98;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.services-title {
+    color: #0F67B1;
+    font-size: 30px;
+    font-weight: bold;
+    margin-block: 0.75rem 0.75rem;
+}
+
+.services-description {
+    color: #304463;
+    font-size: 20px;
 }
