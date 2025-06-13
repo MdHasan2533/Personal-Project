@@ -451,3 +451,49 @@ img {
     color: #304463;
     font-size: 20px;
 }
+
+/*------------------------------------------------------------------------ Skills ------------------------------------------------------------------------------ */
+
+.skills-container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    gap: 10rem;;
+}
+
+.skills-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 3rem;
+}
+
+.skills-items {
+    grid-template-columns: repeat( 3, 1fr);
+    gap: 4rem;
+}
+
+.skills-data {
+    text-align: center;
+}
+
+.skills-blob {
+    width: 90px;
+    height: 110px;
+    background-color: var(--container-color);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-inline: auto;
+}
+
+.skills-img {
+    width: 40px;
+}
+
+.skills-name {
+    font-size: 30px;
+    margin-block: 0.5rem 0.25rem;
+}
+
+.skills-level {
+    font-size: 15px;
+}
